@@ -1,0 +1,8 @@
+file = open('9.txt').readline()
+file = file.replace('...', '*')
+file = file.replace('?!', '*')
+file = file.replace('!?', '*')
+file = file.replace('.', '*')
+file = file.replace('?', '*')
+file = file.replace('!', '*')
+print(file.count('*'))
