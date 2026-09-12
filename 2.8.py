@@ -6,20 +6,21 @@ for i in range(n):
     x = a[i]
     k = 0
     l = 0            
-    kol = a.count(x)
+    ravn = 0
     for j in range(n):
         if i == j:
             k = k
             l = l
+            ravn = ravn
         else:
             y = a[j]
-            kol = a.count(x)
-            if x >= y :
+            if x > y :
                 k += 1
             if x < y:
                 l += 1
-    print(k, l, x)
-    if (kol >= n // 2) or (l == n // 2 and k == n // 2):
+            if x == y:
+                ravn += 1
+    if (l <= n // 2 <= k + ravn):
         print(x)
         break
         
