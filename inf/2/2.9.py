@@ -1,6 +1,9 @@
-file = open('9.txt').readline()
+file = 'qwqiwuqu!jdsaj...jdjskfsk?!sdfjjfs!?A.D. is l.'
+for el in 'QWERTYUIOPLKJHGFDSAZXCVBNM':
+    file = file.replace(el, "-")
 file = file.replace('...', '*')
 file = file.replace('?!', '*')
+file = file.replace('-.', '+')
 file = file.replace('!?', '*')
 file = file.replace('.', '*')
 file = file.replace('?', '*')

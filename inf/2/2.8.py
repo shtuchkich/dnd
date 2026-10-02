@@ -9,9 +9,7 @@ for i in range(n):
     ravn = 0
     for j in range(n):
         if i == j:
-            k = k
-            l = l
-            ravn = ravn
+            continue
         else:
             y = a[j]
             if x > y :
@@ -20,7 +18,7 @@ for i in range(n):
                 l += 1
             if x == y:
                 ravn += 1
-    if (l <= n // 2 <= k + ravn):
+    if (k <= n // 2) and (k + ravn >= n // 2):
         print(x)
         break
         
