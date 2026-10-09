@@ -79,11 +79,17 @@ p20 = []
 p40 = []
 p80 = []
 
+g10 = []
+g20 = []
+g40 = []
+g80 = []
+
 for el in s10:
     w = a10[1::].count(el) / len(a10)
     w10.append(w) 
     p = (n10 ** el) * (m.e ** -n10) / m.factorial(el)
     p10.append(p)
+    g = (1 / dd10 / ((2 * 3.14) ** 0.5)) * (m.e ** (-1 * (el / 2 * dd10 ** 2)))
 s20 = list(set(sorted(a20[1::])))
 for el in s20:
     w = a20[1::].count(el) / len(a20)
@@ -112,6 +118,7 @@ plt.plot(s10, p10)
 plt.plot(s20, p20)
 plt.plot(s40, p40)
 plt.plot(s80, p80)
+plt.plot(s10, g10, color = "red")
 plt.xlabel('n')
 plt.ylabel('w')
 plt.show()
